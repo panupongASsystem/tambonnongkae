@@ -1,0 +1,82 @@
+Array
+(
+    [post] => Array
+        (
+            [table_name] => tbl_activity_img
+            [img_field] => activity_img_id
+            [order_field] => activity_img_order
+            [image_order] => [{"id":17,"order":1},{"id":16,"order":2},{"id":18,"order":3},{"id":8,"order":4},{"id":11,"order":5},{"id":9,"order":6},{"id":10,"order":7},{"id":12,"order":8}]
+        )
+
+    [server] => Array
+        (
+            [USER] => tempc3.assystem.co.t_l0udqmhr6bc
+            [HOME] => /var/www/vhosts/tempc3.assystem.co.th
+            [PATH_TRANSLATED] => redirect:/index.php/images_position/update_order/update_order
+            [PATH_INFO] => /images_position/update_order
+            [SCRIPT_NAME] => /index.php
+            [REQUEST_URI] => /images_position/update_order
+            [QUERY_STRING] => 
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.0
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REDIRECT_URL] => /images_position/update_order
+            [REMOTE_PORT] => 59434
+            [SCRIPT_FILENAME] => /var/www/vhosts/tempc3.assystem.co.th/httpdocs/index.php
+            [SERVER_ADMIN] => [no address given]
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/vhosts/tempc3.assystem.co.th/httpdocs
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => https
+            [DOCUMENT_ROOT] => /var/www/vhosts/tempc3.assystem.co.th/httpdocs
+            [REMOTE_ADDR] => 58.11.28.4
+            [SERVER_PORT] => 443
+            [SERVER_ADDR] => 147.50.231.21
+            [SERVER_NAME] => tempc3.assystem.co.th
+            [SERVER_SOFTWARE] => Apache
+            [SERVER_SIGNATURE] => <address>Apache Server at tempc3.assystem.co.th Port 443</address>
+
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+            [HTTP_COOKIE] => _ga=GA1.1.779355359.1730540819; assys_vid=vw9qoec4lst1751270060360; cookie=accepted; _ga_Z62V1PMEHG=GS2.1.s1758271061$o124$g1$t1758271069$j52$l0$h0; ci_session=j1o5sndda0e0k8ud0hddrobv667mqkjp
+            [HTTP_PRIORITY] => u=1, i
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+            [HTTP_REFERER] => https://tempc3.assystem.co.th/images_position/index/tbl_activity_img/9
+            [HTTP_SEC_FETCH_DEST] => empty
+            [HTTP_SEC_FETCH_MODE] => cors
+            [HTTP_SEC_FETCH_SITE] => same-origin
+            [HTTP_ORIGIN] => https://tempc3.assystem.co.th
+            [HTTP_SEC_CH_UA_MOBILE] => ?0
+            [CONTENT_TYPE] => application/x-www-form-urlencoded; charset=UTF-8
+            [HTTP_SEC_CH_UA] => "Google Chrome";v="141", "Not?A_Brand";v="8", "Chromium";v="141"
+            [HTTP_ACCEPT] => application/json, text/javascript, */*; q=0.01
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+            [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+            [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+            [CONTENT_LENGTH] => 418
+            [HTTP_CONNECTION] => close
+            [HTTP_X_ACCEL_INTERNAL] => /internal-nginx-static-location
+            [HTTP_X_REAL_IP] => 58.11.28.4
+            [HTTP_HOST] => tempc3.assystem.co.th
+            [proxy-nokeepalive] => 1
+            [SSL_TLS_SNI] => tempc3.assystem.co.th
+            [HTTPS] => on
+            [PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY] => 0
+            [PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY] => 0
+            [SCRIPT_URI] => https://tempc3.assystem.co.th/images_position/update_order
+            [SCRIPT_URL] => /images_position/update_order
+            [UNIQUE_ID] => aN5eIGt2QgTV0LEsyQWOqAAAAPQ
+            [REDIRECT_STATUS] => 200
+            [REDIRECT_SSL_TLS_SNI] => tempc3.assystem.co.th
+            [REDIRECT_HTTPS] => on
+            [REDIRECT_PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY] => 0
+            [REDIRECT_PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY] => 0
+            [REDIRECT_SCRIPT_URI] => https://tempc3.assystem.co.th/images_position/update_order
+            [REDIRECT_SCRIPT_URL] => /images_position/update_order
+            [REDIRECT_UNIQUE_ID] => aN5eIGt2QgTV0LEsyQWOqAAAAPQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /index.php/images_position/update_order
+            [REQUEST_TIME_FLOAT] => 1759403552.7899
+            [REQUEST_TIME] => 1759403552
+        )
+
+)
