@@ -43,55 +43,47 @@
                 <img class="cloud-animation cloud-animation-5" src="<?php echo base_url('docs/cloud-header-2.png'); ?>">
                 <img class="cloud-animation cloud-animation-6" src="<?php echo base_url('docs/cloud-header-1.png'); ?>">
 
-                <img class="rotate-animation360 local-sun" src="<?php echo base_url('docs/sun-animation1.png'); ?>">
-
                 <div class="animation-text-orbortor-header">
                     <img src="<?php echo base_url("docs/text-orbortor-header.png"); ?>">
                 </div>
+
             </div>
             <div class="wel-g1-bg">
-                <img class="animation-wind-B animation-wind-1" src="<?php echo base_url('docs/lotus-L-1-animation1.png'); ?>">
-                <img class="animation-wind-B animation-wind-2" src="<?php echo base_url('docs/lotus-R-1-animation1.png'); ?>">
-                <img class="animation-wind-B animation-wind-3" src="<?php echo base_url('docs/lotus-R-2-animation1.png'); ?>">
-                <img class="animation-wind-B animation-wind-4" src="<?php echo base_url('docs/lotus-R-3-animation1.png'); ?>">
-
                 <div class="water-wrap">
                     <img class="water-image" src="<?php echo base_url("docs/water-animation1.png"); ?>" alt="Water Banner">
                     <img class="water-image" src="<?php echo base_url("docs/water-animation1.png"); ?>" alt="Water Banner">
                 </div>
             </div>
             <div class="wel-g1-bg2">
-                <div class="butterfly-body4">
-                    <img class="animation-wind-butterfly-body" src="<?php echo base_url('docs/butterfly-body-L.png'); ?>">
-                    <img class="animation-wind-butterfly-R animation-wind-butterfly-1" src="<?php echo base_url('docs/butterfly-wing-L-1.png'); ?>">
-                    <img class="animation-wind-butterfly-R animation-wind-butterfly-2" src="<?php echo base_url('docs/butterfly-wing-L-2.png'); ?>">
+                <div style="position: absolute; z-index: 2; top: 195px; left: 0px;">
+                    <img src="<?php echo base_url("docs/bird.gif"); ?>">
+                </div>
+
+                <img class="animation-wind-B animation-wind-1" src="<?php echo base_url('docs/lotus-L-1-animation1.png'); ?>">
+                <img class="animation-wind-B animation-wind-2" src="<?php echo base_url('docs/lotus-L-2-animation1.png'); ?>">
+                <img class="animation-wind-B animation-wind-3" src="<?php echo base_url('docs/lotus-R-1-animation1.png'); ?>">
+                <img class="animation-wind-B animation-wind-4" src="<?php echo base_url('docs/lotus-R-2-animation1.png'); ?>">
+            </div>
+        </div>
+
+        <div class="fade-content" id="div2">
+            <div class="wel-g2-bg"></div>
+            <div class="wel-g2-bg2">
+                <div class="wel-g2-visit">
+                    <div class="text-center">
+                        <span class="font-wel-g2-visit-content" id="text-1">
+                            “ บริการดี มีงานทำ สร้างความสามัคคี ประเพณีวัฒนธรรมเป็นเลิศ “
+                        </span>
+                    </div>
+                </div>
+                <div class="fadeInhead2">
+                    <img src="<?php echo base_url("docs/Line.png"); ?>">
+                </div>
+                <div class="fadeInhead3">
+                    วิสัยทัศน์เทศบาลตำบลหนองแก
                 </div>
             </div>
         </div>
-
-    <div class="fade-content" id="div2">
-        <div class="wel-g2-sky">
-            <img class="cloud-animation cloud-animation-5" src="<?php echo base_url('docs/cloud-header-2.png'); ?>">
-            <img class="cloud-animation cloud-animation-6" src="<?php echo base_url('docs/cloud-header-1.png'); ?>">
-
-            <img class="animation-wind-L animation-wind-5" src="<?php echo base_url('docs/flower-L-animation2.png'); ?>">
-            <img class="animation-wind-R animation-wind-6" src="<?php echo base_url('docs/flower-R-animation2.png'); ?>">
-
-            <div style="position: absolute; z-index: 2; top: 307px; left: 953px;">
-                <img src="<?php echo base_url("docs/bird.gif"); ?>">
-            </div>
-        </div>
-        <div class="wel-g2-bg"></div>
-        <div class="wel-g2-bg-Frame-green">
-            <div class="fadeInhead">
-                <img src="<?php echo base_url("docs/text-animation2.png"); ?>">
-            </div>
-            <div class="fadeInhead2 bg-line">
-                <div class="fadeInhead3">“ เศรษฐกิจก้าวหน้า การศึกษาดี มีคุณธรรม นำเทคโนโลยี มีประชาธิปไตย “</div>
-                <div class="fadeInhead4">วิสัยทัศน์เทศบาลตำบลลาดขวาง</div>
-            </div>
-        </div>
-    </div>
     </div>
 </div>
 
@@ -102,113 +94,61 @@
     <?php for ($i = 7; $i <= 11; $i++) : ?>
         <img class="wipwap dot-news-animation-<?php echo $i; ?>" src="<?php echo base_url('docs/light-2.png'); ?>">
     <?php endfor; ?>
-    <div class="text-center" style="margin-top: 870px;">
+    <div class="text-center" style="margin-top: 841px;">
         <span class="font-welcome-btm-other1"><?php echo get_config_value('fname'); ?></span><br>
         <div style="margin-top: -20px;">
-            <span class="font-welcome-btm-other2">อ.<?php echo get_config_value('district'); ?> จ.<?php echo get_config_value('province'); ?></span>
+            <span class="font-welcome-btm-other2">Nong Kae Subdistrict Municipality</span>
         </div>
     </div>
 </div>
 
 <div class="position-3bg">
     <div class="bg-banner">
-        <img class="cloud-animation cloud-cartoon-animation-5" src="<?php echo base_url('docs/cloud.png'); ?>">
-
         <div class="bg-executives">
-            <!-- Left side - Show ID 1 -->
+            <!-- Left side only - Show all personnel with fade transition -->
             <div class="position-relative-left">
-                <?php foreach ($qBackground_personnel as $index => $rs) {
-                    if ($rs->background_personnel_id == 1) { ?>
-                        <div class="text-center">
-                            <div class="bg-ex-img">
-                                <?php
-                                $images = [];
-                                if (!empty($rs->background_personnel_img1)) $images[] = $rs->background_personnel_img1;
-                                if (!empty($rs->background_personnel_img2)) $images[] = $rs->background_personnel_img2;
-                                if (!empty($rs->background_personnel_img3)) $images[] = $rs->background_personnel_img3;
-
-                                foreach ($images as $imgIndex => $img) { ?>
-                                    <img src="docs/img/<?= $img; ?>"
-                                        class="fade-image <?= $imgIndex === 0 ? 'active' : ''; ?>"
-                                        data-personnel-id="1"
-                                        alt="Personnel Image">
-                                <?php } ?>
-                            </div>
-                            <div class="bg-text-name">
-                                <div class="font-link-name"><?= $rs->background_personnel_name; ?></div>
-                                <div class="font-link-rank"><?= $rs->background_personnel_rank; ?></div>
-                            </div>
-                            <div class="bg-text-phone-number">
-                                <span class="font-link-phone">สายด่วน โทร : <?= $rs->background_personnel_phone; ?></span>
-                            </div>
+                <?php foreach ($qBackground_personnel as $index => $rs) { ?>
+                    <div class="personnel-item text-center <?= $index === 0 ? 'active' : ''; ?>" data-personnel-index="<?= $index; ?>">
+                        <div class="bg-ex-img">
+                            <?php if (!empty($rs->background_personnel_img1)) { ?>
+                                <img src="docs/img/<?= $rs->background_personnel_img1; ?>"
+                                    class="fade-image"
+                                    alt="Personnel Image">
+                            <?php } ?>
                         </div>
-                <?php }
-                } ?>
-            </div>
-
-            <!-- Right side - Show ID 2 -->
-            <div class="position-relative-right">
-                <?php foreach ($qBackground_personnel as $index => $rs) {
-                    if ($rs->background_personnel_id == 2) { ?>
-                        <div class="text-center">
-                            <div class="bg-ex-img">
-                                <?php
-                                $images = [];
-                                if (!empty($rs->background_personnel_img1)) $images[] = $rs->background_personnel_img1;
-                                if (!empty($rs->background_personnel_img2)) $images[] = $rs->background_personnel_img2;
-                                if (!empty($rs->background_personnel_img3)) $images[] = $rs->background_personnel_img3;
-
-                                foreach ($images as $imgIndex => $img) { ?>
-                                    <img src="docs/img/<?= $img; ?>"
-                                        class="fade-image <?= $imgIndex === 0 ? 'active' : ''; ?>"
-                                        data-personnel-id="2"
-                                        alt="Personnel Image">
-                                <?php } ?>
-                            </div>
-                            <div class="bg-text-name">
-                                <div class="font-link-name"><?= $rs->background_personnel_name; ?></div>
-                                <div class="font-link-rank"><?= $rs->background_personnel_rank; ?></div>
-                            </div>
-                            <div class="bg-text-phone-number">
-                                <span class="font-link-phone">สายด่วน โทร : <?= $rs->background_personnel_phone; ?></span>
-                            </div>
+                        <div class="bg-text-name">
+                            <div class="font-link-name"><?= $rs->background_personnel_name; ?></div>
+                            <div class="font-link-rank"><?= $rs->background_personnel_rank; ?></div>
                         </div>
-                <?php }
-                } ?>
+                        <div class="bg-text-phone-number">
+                            <span class="font-link-phone">สายด่วน โทร : <?= $rs->background_personnel_phone; ?></span>
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
 
         <script>
-            function startImageFade() {
-                // หา personnel ทั้งหมดที่มีรูปภาพ
-                const personnelIds = [1, 2];
-
-                personnelIds.forEach(personnelId => {
-                    const images = document.querySelectorAll(`img[data-personnel-id="${personnelId}"]`);
-
-                    if (images.length > 1) {
-                        let currentIndex = 0;
-
-                        setInterval(() => {
-                            // ซ่อนรูปปัจจุบัน
-                            images[currentIndex].classList.remove('active');
-
-                            // ไปรูปต่อไป
-                            currentIndex = (currentIndex + 1) % images.length;
-
-                            // แสดงรูปใหม่
-                            images[currentIndex].classList.add('active');
-
-                        }, 6000); // เปลี่ยนทุก 3 วินาที
-                    }
-                });
-            }
-
-            // เริ่มต้น fade effect เมื่อหน้าเว็บโหลดเสร็จ
             document.addEventListener('DOMContentLoaded', function() {
-                startImageFade();
+                const personnelItems = document.querySelectorAll('.personnel-item');
+                let currentIndex = 0;
+
+                // ถ้ามีมากกว่า 1 คนให้ทำการ fade
+                if (personnelItems.length > 1) {
+                    setInterval(function() {
+                        // ซ่อนบุคคลปัจจุบัน
+                        personnelItems[currentIndex].classList.remove('active');
+
+                        // เปลี่ยนไปบุคคลถัดไป
+                        currentIndex = (currentIndex + 1) % personnelItems.length;
+
+                        // แสดงบุคคลใหม่
+                        personnelItems[currentIndex].classList.add('active');
+                    }, 4000); // เปลี่ยนทุก 4 วินาที
+                }
             });
         </script>
+
         <div class="crop">
             <div class="d-flex justify-content-center">
                 <div class="welcome-btm-text-run">
@@ -231,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding-top: 10px; padding-bottom: 0px; position: relative; z-index: 4; margin-top: 0px; margin-left: -10px;">
+            <div class="row" style="padding-top: 5px; padding-bottom: 0px; position: relative; z-index: 4; margin-top: 0px; margin-left: -10px;">
                 <div class="col-9" style="padding-left: 60px;">
                     <div class="row">
                         <div class="col">
@@ -346,15 +286,9 @@
     </div>
 
     <div class="bg-button">
-        <img class="cloud-animation cloud-cartoon-animation-6" src="<?php echo base_url('docs/cloud.png'); ?>">
+        <img class="cloud-animation cloud-cartoon-animation-5" src="<?php echo base_url('docs/cloud.png'); ?>">
 
-        <div class="butterfly-body2">
-            <img class="animation-wind-butterfly-body" src="<?php echo base_url('docs/butterfly-body-R.png'); ?>">
-            <img class="animation-wind-butterfly-L animation-wind-butterfly-3" src="<?php echo base_url('docs/butterfly-wing-R-1.png'); ?>">
-            <img class="animation-wind-butterfly-L animation-wind-butterfly-4" src="<?php echo base_url('docs/butterfly-wing-R-2.png'); ?>">
-        </div>
-
-        <div style="position: absolute; z-index: 2; margin-top: 915px; margin-left: 1321px;">
+        <div style="position: absolute; z-index: 2; margin-top: 421px; right: 56px;">
             <img src="<?php echo base_url("docs/bird.gif"); ?>">
         </div>
 
@@ -450,138 +384,16 @@
                     </div>
                 </a>
             </div>
-
-            <div class="container-video">
-                <div class="d-flex justify-content-center" style="margin-top: 60px;">
-                    <div class="bg-header-activity d-flex align-items-center">
-                        <span class="font-header-home">วิดีทัศน์</span>
-                    </div>
-                </div>
-                <div class="container-fluid" style="margin-top: 40px;">
-                    <?php if (!empty($latest_video)) : ?>
-                        <div class="d-flex justify-content-center video-row">
-                            <?php foreach ($latest_video as $video) : ?>
-                                <?php if (!empty($video->video_link)) : ?>
-                                    <?php
-                                    // Check if it's a YouTube link
-                                    if (preg_match("/youtu\.be\/|youtube\.com\/watch|youtube\.com\/shorts/", $video->video_link)) :
-                                        if (preg_match("/youtu\.be\/([a-zA-Z0-9_-]+)/", $video->video_link, $matches)) {
-                                            $video_id = $matches[1];
-                                        } elseif (preg_match("/youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/", $video->video_link, $matches)) {
-                                            $video_id = $matches[1];
-                                        } elseif (preg_match("/youtube\.com\/shorts\/([a-zA-Z0-9_-]+)/", $video->video_link, $matches)) {
-                                            $video_id = $matches[1];
-                                        }
-                                        if (!empty($video_id)) : ?>
-                                            <div class="video-wrapper">
-                                                <div class="video-content">
-                                                    <iframe
-                                                        class="video-iframe"
-                                                        width="320"
-                                                        height="182"
-                                                        src="https://www.youtube.com/embed/<?= $video_id; ?>?rel=0"
-                                                        title="YouTube video player"
-                                                        frameborder="0"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                        allowfullscreen></iframe>
-                                                </div>
-                                                <div class="video-details">
-                                                    <div class="crop-time-video">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                                                            <path d="M0 11.7812C0 12.4541 0.575893 13 1.28571 13H10.7143C11.4241 13 12 12.4541 12 11.7812V4.875H0V11.7812ZM1.71429 6.90625C1.71429 6.68281 1.90714 6.5 2.14286 6.5H9.85714C10.0929 6.5 10.2857 6.68281 10.2857 6.90625V8.53125C10.2857 8.75469 10.0929 8.9375 9.85714 8.9375H2.14286C1.90714 8.9375 1.71429 8.75469 1.71429 8.53125V6.90625ZM10.7143 1.625H9.42857V0.40625C9.42857 0.182812 9.23571 0 9 0H8.14286C7.90714 0 7.71429 0.182812 7.71429 0.40625V1.625H4.28571V0.40625C4.28571 0.182812 4.09286 0 3.85714 0H3C2.76429 0 2.57143 0.182812 2.57143 0.40625V1.625H1.28571C0.575893 1.625 0 2.1709 0 2.84375V4.0625H12V2.84375C12 2.1709 11.4241 1.625 10.7143 1.625Z" fill="white" />
-                                                        </svg>
-                                                        <span class="span-time-home-new">
-                                                            <?php
-                                                            $date = new DateTime($video->video_date);
-                                                            $day_th = $date->format('d');
-                                                            $month_th = setThaiMonth($date->format('F'));
-                                                            $year_th = ($date->format('Y') + 543) % 100; // เอาเฉพาะ 2 ตัวท้าย
-                                                            $formattedDate = "$day_th $month_th $year_th";
-                                                            echo $formattedDate;
-                                                            ?>
-                                                        </span>
-                                                    </div>
-                                                    <span class="video-title"><?= $video->video_name; ?>
-                                                        <?php
-                                                        // วันที่ของข่าว
-                                                        $video_date = new DateTime($video->video_date);
-
-                                                        // วันที่ปัจจุบัน
-                                                        $current_date = new DateTime();
-
-                                                        // คำนวณหาความต่างของวัน
-                                                        $interval = $current_date->diff($video_date);
-                                                        $days_difference = $interval->days;
-
-                                                        // ถ้ามากกว่า 30 วัน ให้ซ่อนไว้
-                                                        if ($days_difference > 30) {
-                                                            // ไม่แสดงรูปภาพ
-                                                        } else {
-                                                            // แสดงรูปภาพ
-                                                            echo '<img src="docs/activity-new.gif">';
-                                                        }
-                                                        ?>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
-                                <?php endif; ?>
-                            <?php endforeach; ?>
-                        </div>
-                    <?php endif; ?>
-                </div>
-
-                <div class="d-flex justify-content-center underline">
-                    <a href="<?php echo site_url('pages/video'); ?>">
-                        <div class="button-activity-all text-center">
-                            <span class="font-all-home">ดูทั้งหมด</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 
     <div class="bg-activity" id="activity">
-        <div class="water-activity"></div>
+        <img class="cloud-animation cloud-cartoon-animation-6" src="<?php echo base_url('docs/cloud.png'); ?>">
 
-        <img class="animation-wind-L animation-wind-8" src="<?php echo base_url('docs/lotus-button-1.png'); ?>">
-        <img class="animation-wind-L animation-wind-9" src="<?php echo base_url('docs/lotus-button-2.png'); ?>">
+        <div class="top-bg-activity"></div>
 
-        <img class="boat-animation-R boat-animation-1" src="<?php echo base_url('docs/ship-activity.png'); ?>">
-
-        <div class="container-fish-LR">
-            <div class="fish-animation-L">
-                <img class="dynamic-fish-animation" src="<?php echo base_url('docs/fish-L-2.png'); ?>" alt="Fish">
-                <img class="static-fish-animation" src="<?php echo base_url('docs/fish-L-2.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-L2">
-                <img class="dynamic-fish-animation" src="<?php echo base_url('docs/fish-L-1.png'); ?>" alt="Fish">
-                <img class="static-fish-animation" src="<?php echo base_url('docs/fish-L-1.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-R">
-                <img class="dynamic-fish-animation2" src="<?php echo base_url('docs/fish-R-2.png'); ?>" alt="Fish">
-                <img class="static-fish-animation2" src="<?php echo base_url('docs/fish-R-2.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-R1">
-                <img class="dynamic-fish-animation2" src="<?php echo base_url('docs/fish-R-1.png'); ?>" alt="Fish">
-                <img class="static-fish-animation2" src="<?php echo base_url('docs/fish-R-1.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-R2">
-                <img class="dynamic-fish-animation2" src="<?php echo base_url('docs/fish-R-2.png'); ?>" alt="Fish">
-                <img class="static-fish-animation2" src="<?php echo base_url('docs/fish-R-2.png'); ?>" alt="Fish">
-            </div>
-        </div>
-
-        <div class="ball-container">
-            <?php
-            $bubbles = ['anima_ball1.png', 'anima_ball2.png', 'anima_ball3.png'];
-            for ($i = 1; $i <= 12; $i++):
-            ?>
-                <img class="ball-animation" src="<?php echo base_url('docs/' . $bubbles[($i - 1) % 3]); ?>" alt="Bubble">
-            <?php endfor; ?>
-        </div>
+        <img class="animation-wind-B animation-wind-8" src="<?php echo base_url('docs/sugar cane-activity.png'); ?>">
+        <img class="animation-wind-B animation-wind-9" src="<?php echo base_url('docs/man-activity.png'); ?>">
 
         <div class="crop">
             <div class="d-flex justify-content-center">
@@ -674,15 +486,15 @@
     <div class="bg-public-news">
         <div class="bg-public1-2"></div>
 
-        <img class="animation-wind-L animation-wind-10" src="<?php echo base_url('docs/animation-flower-public1-1.png'); ?>">
-        <img class="animation-wind-R animation-wind-11" src="<?php echo base_url('docs/animation-flower-public1-2.png'); ?>">
+        <img class="animation-wind-L animation-wind-10" src="<?php echo base_url('docs/animation-flower3.png'); ?>">
+        <img class="animation-wind-R animation-wind-11" src="<?php echo base_url('docs/animation-flower4.png'); ?>">
 
 
         <div class="animation-container">
             <?php
             $images = [
-                'animation-flower-public2-1.png',
-                'animation-flower-public2-2.png',
+                'animation-flower1.png',
+                'animation-flower2.png',
             ];
 
             for ($i = 1; $i <= 14; $i++) {
@@ -1753,8 +1565,7 @@
 </div>
 
 <div class="bg-news-dla">
-    <img class="cloud-animation cloud-cartoon-animation-1" src="<?php echo base_url('docs/cloud 15.png'); ?>">
-    <img class="cloud-animation cloud-cartoon-animation-3" src="<?php echo base_url('docs/cloud-new.png'); ?>">
+    <img class="bird-animation-L" src="<?php echo base_url('docs/animation_birds.png'); ?>">
 
     <div id="myDIV3" class="underline" style="padding-top: 1%; position: relative; z-index: 5;">
         <div class="tab-container3 d-flex justify-content-center">
@@ -1772,139 +1583,139 @@
         <br>
         <div class="d-flex justify-content-center">
             <div id="tabDla1" class="tab-content-dla">
-                    <div class="news-dla-prov2">
-                        <?php if (!empty($prov_local_doc)) : ?>
-                            <?php
-                            $totalDocuments = count($prov_local_doc);
-                            foreach ($prov_local_doc as $index => $rs) : ?>
-                                <div class="row mt-2 underline" style="padding-left: 20px;">
-                                    <div class="col-2">
-                                        <span class="font-dla-1 line-ellipsis-dla1"><img src="docs/icon-news.png">&nbsp;&nbsp; <?php echo $rs['doc_no']; ?> </span>
-                                    </div>
-                                    <div class="col-5" style="padding-left: 50px;">
-                                        <?php
-                                        // หา URL ที่มีค่า
-                                        $url = $rs['url'] ?? $rs['url1'] ?? $rs['url01'] ?? $rs['link'] ?? '';
-                                        ?>
+                <div class="news-dla-prov2">
+                    <?php if (!empty($prov_local_doc)) : ?>
+                        <?php
+                        $totalDocuments = count($prov_local_doc);
+                        foreach ($prov_local_doc as $index => $rs) : ?>
+                            <div class="row mt-2 underline" style="padding-left: 20px;">
+                                <div class="col-2">
+                                    <span class="font-dla-1 line-ellipsis-dla1"><img src="docs/icon-news.png">&nbsp;&nbsp; <?php echo $rs['doc_no']; ?> </span>
+                                </div>
+                                <div class="col-5" style="padding-left: 50px;">
+                                    <?php
+                                    // หา URL ที่มีค่า
+                                    $url = $rs['url'] ?? $rs['url1'] ?? $rs['url01'] ?? $rs['link'] ?? '';
+                                    ?>
 
-                                        <?php if (!empty($url)): ?>
-                                            <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer">
-                                                <span class="font-dla-2 line-ellipsis-dla-prov2-new"><?php echo $rs['topic']; ?></span>
-                                            </a>
-                                        <?php else: ?>
+                                    <?php if (!empty($url)): ?>
+                                        <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer">
                                             <span class="font-dla-2 line-ellipsis-dla-prov2-new"><?php echo $rs['topic']; ?></span>
-                                        <?php endif; ?>
-                                    </div>
-                                    <div class="col-2 text-center" style="padding-left: 90px;">
-                                        <?php
-                                        // แสดงส่วนของ "ด่วนที่สุด" หรือ "ทั่วไป" ตามที่ต้องการ
-                                        if (strpos($rs['topic'], '[ด่วนที่สุด]') !== false) {
-                                            echo '<span class="font-dla-2 most_urgent">ด่วนที่สุด</span>';
-                                        } elseif (strpos($rs['topic'], '[ด่วนมาก]') !== false) {
-                                            echo '<span class="font-dla-2 very_urgent">ด่วนมาก</span>';
-                                        } elseif (strpos($rs['topic'], '[ทั่วไป]') !== false) {
-                                            echo '<span class="font-dla-2 green-color">ทั่วไป</span>';
-                                        }
-                                        ?>
-                                    </div>
-                                    <div class="col-1" style="padding-left: 30px;">
-                                        <?php
-                                        // สมมติว่าค่าที่ได้รับมาจากตัวแปร $rs['doc_date'] อยู่ในรูปแบบ "10 มิถุนายน 2567" หรือ "10 มิ.ย. 2567"
-                                        $dateStr = $rs['doc_date'];
+                                        </a>
+                                    <?php else: ?>
+                                        <span class="font-dla-2 line-ellipsis-dla-prov2-new"><?php echo $rs['topic']; ?></span>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="col-2 text-center" style="padding-left: 90px;">
+                                    <?php
+                                    // แสดงส่วนของ "ด่วนที่สุด" หรือ "ทั่วไป" ตามที่ต้องการ
+                                    if (strpos($rs['topic'], '[ด่วนที่สุด]') !== false) {
+                                        echo '<span class="font-dla-2 most_urgent">ด่วนที่สุด</span>';
+                                    } elseif (strpos($rs['topic'], '[ด่วนมาก]') !== false) {
+                                        echo '<span class="font-dla-2 very_urgent">ด่วนมาก</span>';
+                                    } elseif (strpos($rs['topic'], '[ทั่วไป]') !== false) {
+                                        echo '<span class="font-dla-2 green-color">ทั่วไป</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <div class="col-1" style="padding-left: 30px;">
+                                    <?php
+                                    // สมมติว่าค่าที่ได้รับมาจากตัวแปร $rs['doc_date'] อยู่ในรูปแบบ "10 มิถุนายน 2567" หรือ "10 มิ.ย. 2567"
+                                    $dateStr = $rs['doc_date'];
 
-                                        // กำหนดอาเรย์ของเดือนภาษาไทยทั้งแบบเต็มและแบบย่อ
-                                        $thaiMonths = [
-                                            // เดือนแบบเต็ม
-                                            'มกราคม' => '01',
-                                            'กุมภาพันธ์' => '02',
-                                            'มีนาคม' => '03',
-                                            'เมษายน' => '04',
-                                            'พฤษภาคม' => '05',
-                                            'มิถุนายน' => '06',
-                                            'กรกฎาคม' => '07',
-                                            'สิงหาคม' => '08',
-                                            'กันยายน' => '09',
-                                            'ตุลาคม' => '10',
-                                            'พฤศจิกายน' => '11',
-                                            'ธันวาคม' => '12',
-                                            // เดือนแบบย่อ
-                                            'ม.ค.' => '01',
-                                            'ก.พ.' => '02',
-                                            'มี.ค.' => '03',
-                                            'เม.ย.' => '04',
-                                            'พ.ค.' => '05',
-                                            'มิ.ย.' => '06',
-                                            'ก.ค.' => '07',
-                                            'ส.ค.' => '08',
-                                            'ก.ย.' => '09',
-                                            'ต.ค.' => '10',
-                                            'พ.ย.' => '11',
-                                            'ธ.ค.' => '12'
-                                        ];
+                                    // กำหนดอาเรย์ของเดือนภาษาไทยทั้งแบบเต็มและแบบย่อ
+                                    $thaiMonths = [
+                                        // เดือนแบบเต็ม
+                                        'มกราคม' => '01',
+                                        'กุมภาพันธ์' => '02',
+                                        'มีนาคม' => '03',
+                                        'เมษายน' => '04',
+                                        'พฤษภาคม' => '05',
+                                        'มิถุนายน' => '06',
+                                        'กรกฎาคม' => '07',
+                                        'สิงหาคม' => '08',
+                                        'กันยายน' => '09',
+                                        'ตุลาคม' => '10',
+                                        'พฤศจิกายน' => '11',
+                                        'ธันวาคม' => '12',
+                                        // เดือนแบบย่อ
+                                        'ม.ค.' => '01',
+                                        'ก.พ.' => '02',
+                                        'มี.ค.' => '03',
+                                        'เม.ย.' => '04',
+                                        'พ.ค.' => '05',
+                                        'มิ.ย.' => '06',
+                                        'ก.ค.' => '07',
+                                        'ส.ค.' => '08',
+                                        'ก.ย.' => '09',
+                                        'ต.ค.' => '10',
+                                        'พ.ย.' => '11',
+                                        'ธ.ค.' => '12'
+                                    ];
 
-                                        // แยกวันที่ เดือน และ ปี ออกจากสตริง
-                                        $parts = explode(' ', $dateStr);
-                                        if (count($parts) !== 3) {
-                                            echo "รูปแบบวันที่ไม่ถูกต้อง";
-                                        } else {
-                                            $day = $parts[0];
-                                            $monthThai = $parts[1];
-                                            $yearThai = $parts[2];
+                                    // แยกวันที่ เดือน และ ปี ออกจากสตริง
+                                    $parts = explode(' ', $dateStr);
+                                    if (count($parts) !== 3) {
+                                        echo "รูปแบบวันที่ไม่ถูกต้อง";
+                                    } else {
+                                        $day = $parts[0];
+                                        $monthThai = $parts[1];
+                                        $yearThai = $parts[2];
 
-                                            // ตรวจสอบว่าเดือนภาษาไทยมีอยู่ในอาเรย์ของเดือนหรือไม่
-                                            if (isset($thaiMonths[$monthThai])) {
-                                                $month = $thaiMonths[$monthThai];
+                                        // ตรวจสอบว่าเดือนภาษาไทยมีอยู่ในอาเรย์ของเดือนหรือไม่
+                                        if (isset($thaiMonths[$monthThai])) {
+                                            $month = $thaiMonths[$monthThai];
 
-                                                // แปลงปีจาก พ.ศ. เป็น ค.ศ.
-                                                $year = $yearThai - 543;
+                                            // แปลงปีจาก พ.ศ. เป็น ค.ศ.
+                                            $year = $yearThai - 543;
 
-                                                // สร้างรูปแบบวันที่ใหม่ในรูปแบบสากล (YYYY-MM-DD)
-                                                $formattedDate = "$year-$month-$day";
+                                            // สร้างรูปแบบวันที่ใหม่ในรูปแบบสากล (YYYY-MM-DD)
+                                            $formattedDate = "$year-$month-$day";
 
-                                                // สร้าง DateTime object จากวันที่ที่ถูกแปลงแล้ว
-                                                $date = DateTime::createFromFormat('Y-m-d', $formattedDate);
+                                            // สร้าง DateTime object จากวันที่ที่ถูกแปลงแล้ว
+                                            $date = DateTime::createFromFormat('Y-m-d', $formattedDate);
 
-                                                // ตรวจสอบว่าการแปลงวันที่สำเร็จ
-                                                if ($date !== false) {
-                                                    // วันที่ปัจจุบัน
-                                                    $currentDate = new DateTime();
+                                            // ตรวจสอบว่าการแปลงวันที่สำเร็จ
+                                            if ($date !== false) {
+                                                // วันที่ปัจจุบัน
+                                                $currentDate = new DateTime();
 
-                                                    // คำนวณความต่างระหว่างวันที่
-                                                    $interval = $currentDate->diff($date);
+                                                // คำนวณความต่างระหว่างวันที่
+                                                $interval = $currentDate->diff($date);
 
-                                                    // ตรวจสอบว่าความต่างของวันไม่เกิน 7 วัน
-                                                    if ($interval->days <= 7) {
-                                                        // แสดง New tag
-                                                        echo '<div class="bt-new-dla"><span class="text-new-dla">new</span></div>';
-                                                    }
-                                                } else {
-                                                    echo "การแปลงวันที่ไม่สำเร็จ";
+                                                // ตรวจสอบว่าความต่างของวันไม่เกิน 7 วัน
+                                                if ($interval->days <= 7) {
+                                                    // แสดง New tag
+                                                    echo '<div class="bt-new-dla"><span class="text-new-dla">new</span></div>';
                                                 }
                                             } else {
-                                                echo "เดือนที่ระบุไม่ถูกต้อง";
+                                                echo "การแปลงวันที่ไม่สำเร็จ";
                                             }
+                                        } else {
+                                            echo "เดือนที่ระบุไม่ถูกต้อง";
                                         }
-                                        ?>
-                                    </div>
-                                    <div class="col-2">
-                                        <span class="font-all-dla" style="padding-left: 0px;">
-                                            <?php
-                                            $docDate = $rs['doc_date'];
-                                            $docDateParts = explode(' ', $docDate);
-                                            $monthAbbreviation = $docDateParts[1];
-                                            $longMonth = setMonthAbbreviationToLong($monthAbbreviation);
-                                            echo $docDateParts[0] . ' ' . $longMonth . ' ' . $docDateParts[2];
-                                            ?>
-                                        </span>
-                                    </div>
+                                    }
+                                    ?>
                                 </div>
-                                <?php if ($index < $totalDocuments - 1) : ?>
-                                    <div class="dla-end"></div>
-                                <?php endif; ?>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                    </div>
-                    <div class="d-flex justify-content-end" style="margin-top: 10px; margin-left: 0px; color: #707070; font-size: 13px;">
+                                <div class="col-2">
+                                    <span class="font-all-dla" style="padding-left: 0px;">
+                                        <?php
+                                        $docDate = $rs['doc_date'];
+                                        $docDateParts = explode(' ', $docDate);
+                                        $monthAbbreviation = $docDateParts[1];
+                                        $longMonth = setMonthAbbreviationToLong($monthAbbreviation);
+                                        echo $docDateParts[0] . ' ' . $longMonth . ' ' . $docDateParts[2];
+                                        ?>
+                                    </span>
+                                </div>
+                            </div>
+                            <?php if ($index < $totalDocuments - 1) : ?>
+                                <div class="dla-end"></div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="d-flex justify-content-end" style="margin-top: 10px; margin-left: 0px; color: #707070; font-size: 13px;">
                     <span>หมายเหตุ อ้างอิงแหล่งที่มาจาก กรมส่งเสริมการปกครองส่วนท้องถิ่น
                         <?php if (!empty($province_links['POLA'])): ?>
                             <a href="<?= $province_links['POLA'] ?>" target="_blank">
@@ -1913,14 +1724,14 @@
                         <?php endif; ?>
                     </span>
                 </div>
-                    <div class="d-flex justify-content-center underline" style="margin-top: 80px;">
-                        <a href="<?php echo site_url('pages/prov_local_doc'); ?>">
-                            <div class="button-new2-all">
-                                <span class="font-all-home">ดูทั้งหมด</span>
-                            </div>
-                        </a>
-                    </div>
+                <div class="d-flex justify-content-center underline" style="margin-top: 80px;">
+                    <a href="<?php echo site_url('pages/prov_local_doc'); ?>">
+                        <div class="button-new2-all">
+                            <span class="font-all-home">ดูทั้งหมด</span>
+                        </div>
+                    </a>
                 </div>
+            </div>
             <div id="tabDla2" class="tab-content-dla">
                 <div class="news-dla-prov2">
                     <?php if (!empty($rssData)) : ?>
@@ -2013,107 +1824,82 @@
             <img src="<?php echo base_url("docs/head-travel.png"); ?>">
         </div>
 
-        <img class="animation-wind-L animation-wind-12" src="<?php echo base_url('docs/animation_leaf1.png'); ?>">
-        <img class="animation-wind-R animation-wind-13" src="<?php echo base_url('docs/animation_leaf2s.png'); ?>">
+        <img class="animation-wind-L animation-wind-12" src="<?php echo base_url('docs/animation-leaf1.png'); ?>">
+        <img class="animation-wind-R animation-wind-13" src="<?php echo base_url('docs/animation-leaf2.png'); ?>">
 
-        <img class="cloud-animation cloud-cartoon-animation-1" src="<?php echo base_url('docs/animation_cloud2.png'); ?>">
-        <img class="cloud-animation cloud-cartoon-animation-2" src="<?php echo base_url('docs/animation_cloud1.png'); ?>">
-        <img class="cloud-animation cloud-cartoon-animation-3" src="<?php echo base_url('docs/animation_cloud1.png'); ?>">
-        <img class="cloud-animation cloud-cartoon-animation-4" src="<?php echo base_url('docs/animation_cloud2.png'); ?>">
+        <img class="cloud-animation cloud-cartoon-animation-1" src="<?php echo base_url('docs/cloud-travel.png'); ?>">
 
-        <div style="position: absolute; z-index: 2; top: 437px; left: 306px;">
+        <div style="position: absolute; z-index: 2; top: 598px; right: 571px;">
             <img src="<?php echo base_url("docs/bird.gif"); ?>">
         </div>
 
         <a href="<?php echo site_url('Pages/travel_detail/1'); ?>">
-            <div class="image-container pin-delay-0 text-center" style="position: absolute; z-index: 5; top: 675px; left: 180px;">
+            <div class="image-container pin-delay-0 text-center" style="position: absolute; z-index: 5; top: 855px; left: 239px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 65px; margin-top: 20px;">
-                    <span class="font-travel">ตลาดนัดชุมชน<br>เคหะฉะเชิงเทรา</span>
+                <div class="rectangle-travel" style="width: 301px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">รร.บ้านสำราญสุข</span>
                 </div>
             </div>
         </a>
         <a href="<?php echo site_url('Pages/travel_detail/2'); ?>">
-            <div class="image-container pin-delay-1 text-center" style="position: absolute; z-index: 5; top: 610px; left: 383px;">
+            <div class="image-container pin-delay-1 text-center" style="position: absolute; z-index: 5; top: 909px; left: 589px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 44px; margin-top: 20px;">
-                    <span class="font-travel">ห้างFN</span>
+                <div class="rectangle-travel" style="width: 256px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">วัดหนองแก</span>
                 </div>
             </div>
         </a>
         <a href="<?php echo site_url('Pages/travel_detail/3'); ?>">
-            <div class="image-container pin-delay-2 text-center" style="position: absolute; z-index: 5; top: 516px; left: 567px;">
+            <div class="image-container pin-delay-2 text-center" style="position: absolute; z-index: 5; top: 826px; left: 817px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 44px; margin-top: 20px;">
-                    <span class="font-travel">ร้านกาแฟสตาร์บัค</span>
+                <div class="rectangle-travel" style="width: 326px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">เทศบาลตำบลหนองแก</span>
                 </div>
             </div>
         </a>
         <a href="<?php echo site_url('Pages/travel_detail/4'); ?>">
-            <div class="image-container pin-delay-3 text-center" style="position: absolute; z-index: 5; top: 678px; left: 715px;">
+            <div class="image-container pin-delay-3 text-center" style="position: absolute; z-index: 5; top: 955px; right: 594px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 44px; margin-top: 20px;">
-                    <span class="font-travel">ตลาดดีเลิศ</span>
+                <div class="rectangle-travel" style="width: 295px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">ศพด.หนองแก</span>
                 </div>
             </div>
         </a>
         <a href="<?php echo site_url('Pages/travel_detail/5'); ?>">
-            <div class="image-container pin-delay-4 text-center" style="position: absolute; z-index: 5; top: 592px; right: 656px;">
+            <div class="image-container pin-delay-4 text-center" style="position: absolute; z-index: 5; top: 853px; right: 274px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 44px; margin-top: 20px;">
-                    <span class="font-travel">Bergerking</span>
+                <div class="rectangle-travel" style="width: 382px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">รร.บ้านหนองโกโนนประดู่วิทยา</span>
                 </div>
             </div>
         </a>
         <a href="<?php echo site_url('Pages/travel_detail/6'); ?>">
-            <div class="image-container pin-delay-5 text-center" style="position: absolute; z-index: 5; top: 685px; right: 391px;">
+            <div class="image-container pin-delay-5 text-center" style="position: absolute; z-index: 5; top: 1110px; left: 365px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 44px; margin-top: 20px;">
-                    <span class="font-travel">วัดหัวเนิน</span>
+                <div class="rectangle-travel" style="width: 301px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">รร.หนองแกสระแก้ววิทยา</span>
                 </div>
             </div>
         </a>
         <a href="<?php echo site_url('Pages/travel_detail/7'); ?>">
-            <div class="image-container pin-delay-6 text-center" style="position: absolute; z-index: 5; top: 632px; right: 128px;">
+            <div class="image-container pin-delay-6 text-center" style="position: absolute; z-index: 5; top: 1096px; left: 826px;">
                 <img src="<?php echo base_url('docs/pin1.png'); ?>">
-                <div class="rectangle-travel" style="width: 277px; height: 44px; margin-top: 20px;">
-                    <span class="font-travel">วัดลาดขวาง</span>
+                <div class="rectangle-travel" style="width: 256px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">รร.กุดหานสามัคคี</span>
                 </div>
             </div>
         </a>
-
+        <a href="<?php echo site_url('Pages/travel_detail/8'); ?>">
+            <div class="image-container pin-delay-7 text-center" style="position: absolute; z-index: 5; top: 1138px; right: 400px;">
+                <img src="<?php echo base_url('docs/pin1.png'); ?>">
+                <div class="rectangle-travel" style="width: 295px; height: 35px; margin-top: 20px;">
+                    <span class="font-travel">รพ.สต.หนองแก</span>
+                </div>
+            </div>
+        </a>
     </div>
 
     <div class="bg-travel-2">
-        <img class="water-animation2" src="<?php echo base_url('docs/animation-water.png'); ?>">
-
-        <div class="bg-travel-2-2"></div>
-
-        <img class="boat-animation-L boat-animation-2" src="<?php echo base_url('docs/animation-ship.png'); ?>">
-
-        <div class="container-fish-LRs">
-            <div class="fish-animation-Ls">
-                <img class="dynamic-fish-animation" src="<?php echo base_url('docs/animation-fish1.png'); ?>" alt="Fish">
-                <img class="static-fish-animation" src="<?php echo base_url('docs/animation-fish1.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-Ls2">
-                <img class="dynamic-fish-animation" src="<?php echo base_url('docs/animation-fish1.png'); ?>" alt="Fish">
-                <img class="static-fish-animation" src="<?php echo base_url('docs/animation-fish1.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-Ls3">
-                <img class="dynamic-fish-animation" src="<?php echo base_url('docs/animation-fish1.png'); ?>" alt="Fish">
-                <img class="static-fish-animation" src="<?php echo base_url('docs/animation-fish1.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-Rs">
-                <img class="dynamic-fish-animation2" src="<?php echo base_url('docs/animation-fish2.png'); ?>" alt="Fish">
-                <img class="static-fish-animation2" src="<?php echo base_url('docs/animation-fish2.png'); ?>" alt="Fish">
-            </div>
-            <div class="fish-animation-Rs2">
-                <img class="dynamic-fish-animation2" src="<?php echo base_url('docs/animation-fish2.png'); ?>" alt="Fish">
-                <img class="static-fish-animation2" src="<?php echo base_url('docs/animation-fish2.png'); ?>" alt="Fish">
-            </div>
-            
-        </div>
     </div>
 </div>
 
@@ -2211,7 +1997,7 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="bg-facebook-new">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLadkhwanglocal%2F&tabs=timeline&width=291&height=555&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="291" height="555" style="border-radius: 0px 0px 24px 24px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnongkaecity%2F%3Fref%3Dembed_page%23&tabs=timeline&width=291&height=555&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="291" height="555" style="border-radius: 0px 0px 24px 24px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </div>
                     <div class="col-6" style="padding-top: 20px;">

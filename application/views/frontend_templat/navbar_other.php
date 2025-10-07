@@ -201,7 +201,7 @@
       }
 
       .font-head-navbar-letf-logo2 {
-          color: #4A0D49;
+          color: #83431A;
           /* font-family: "Noto Looped Thai UI"; */
           font-size: 20px;
           font-style: normal;
@@ -396,7 +396,7 @@
       }
 
       .nav-background .menu-item a {
-          color: #4A0D49;
+          color: #83431A;
           text-decoration: none;
           font-weight: bold;
           z-index: 2;
@@ -404,15 +404,15 @@
       }
 
       .nav-background .menu-item a:hover {
-          color: #91008F;
+          color: #83431A;
       }
 
       .nav-background .menu-item.dropdown:hover>a {
-          color: #91008F !important;
+          color: #83431A !important;
       }
 
       .nav-background .menu-item.dropdown:hover .dropbtn {
-          color: #91008F !important;
+          color: #83431A !important;
       }
 
       .nav-background .menu-item.dropdown:hover .dropdown-content {
@@ -511,18 +511,18 @@
       }
 
       .menu-link {
-          color: #fff;
+          color: #79360B;
           text-decoration: none;
           transition: color 0.3s ease;
           /* เพิ่มการเปลี่ยนสีแบบ smooth */
       }
 
       .menu-link:hover {
-          color: #fff;
+          color: #79360B;
       }
 
       .menu-link.active {
-          color: #fff;
+          color: #79360B;
       }
 
       .dropdown-content a {
@@ -1142,7 +1142,7 @@
       .nav-background .user-info {
           display: flex;
           align-items: center;
-          color: #4A0D49;
+          color: #83431A;
           text-decoration: none;
           padding: 8px 12px;
           border-radius: 25px;
@@ -1156,7 +1156,7 @@
 
       .nav-background .user-info:hover {
           background: rgba(255, 255, 255, 0.9);
-          color: #91008F;
+          color: #83431A;
           text-decoration: none;
       }
 
@@ -1746,8 +1746,6 @@
           <div class="animation-text-orbortor-nav">
               <img src="<?php echo base_url("docs/text-orbortor-nav.png"); ?>">
           </div>
-
-          <img class="animation-wind-R animation-wind-7" src="<?php echo base_url('docs/flower-Header Line.png'); ?>">
       </div>
       <div class="wel-nav-home"></div>
   </div>

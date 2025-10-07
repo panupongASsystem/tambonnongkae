@@ -49,22 +49,27 @@ $method = $this->router->fetch_method();
 $is_home_page = (strtolower($controller) === 'home' && strtolower($method) === 'index');
 
 $show_service_links = $is_home_page;
-$margin_top = $is_home_page ? '70px' : '180px';
+$margin_top = $is_home_page ? '50px' : '160px';
 $bg_class = $is_home_page ? 'bg-link2' : 'bg-link2-other';
 ?>
 
 <div class="bg-footer">
-    <img class="animation-wind-R animation-wind-9" src="<?php echo base_url('docs/animation-leaf2.png'); ?>">
+    <img class="cloud-animation cloud-animation-1" src="<?php echo base_url('docs/cloud-footer.png'); ?>">
 
-    <footer class="footer">
-        <img class="cloud-animation cloud-animation-1" src="<?php echo base_url('docs/cloud-footer1.png'); ?>">
-        <img class="cloud-animation cloud-animation-2" src="<?php echo base_url('docs/cloud-footer2.png'); ?>">
-        <img class="cloud-animation cloud-animation-3" src="<?php echo base_url('docs/cloud-footer1.png'); ?>">
-        <img class="cloud-animation cloud-animation-4" src="<?php echo base_url('docs/cloud-footer2.png'); ?>">
+    <!-- ใช้ตัวแปร $bg_class แทน strpos แบบเก่า -->
+    <div class="<?php echo $bg_class; ?>">
+        <footer class="footer">
+            <div style="position: absolute; z-index: 2; top: 530px; left: 887px;">
+                <img src="<?php echo base_url("docs/bird.gif"); ?>">
+            </div>
 
+            <div class="animation-text-orbortor-footer">
+                <img src="<?php echo base_url("docs/text-orbortor-footer.png"); ?>">
+            </div>
 
-        <!-- ใช้ตัวแปร $bg_class แทน strpos แบบเก่า -->
-        <div class="<?php echo $bg_class; ?>">
+            <div class="google-map-footer">
+                <iframe src="<?php echo get_config_value('google_map'); ?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <?php for ($i = 1; $i <= 6; $i++) : ?>
                 <img class="wipwap dot-news-animation-<?php echo $i; ?>" src="<?php echo base_url('docs/light-1.png'); ?>">
             <?php endfor; ?>
@@ -232,18 +237,6 @@ $bg_class = $is_home_page ? 'bg-link2' : 'bg-link2-other';
                 </span>
             </div>
 
-            <div style="position: absolute; z-index: 2; top: 457px; left: 301px;">
-                <img src="<?php echo base_url("docs/bird.gif"); ?>">
-            </div>
-
-            <div class="animation-text-orbortor-footer">
-                <img src="<?php echo base_url("docs/text-orbortor-footer.png"); ?>">
-            </div>
-
-            <div class="google-map-footer">
-                <iframe src="<?php echo get_config_value('google_map'); ?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
             <div class="row" style="margin: auto; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 100%;">
                 <div class="col-12" style="text-align: center;">
                     <div class="">
@@ -264,8 +257,8 @@ $bg_class = $is_home_page ? 'bg-link2' : 'bg-link2-other';
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </div>
 
 <!-- 🎨 CSS สำหรับ Animations (เดิม) -->

@@ -645,7 +645,7 @@
   }
 
   .font-left-text-run-vision {
-    color: #4A0D49;
+    color: #DB326B;
     text-align: center;
     font-size: 40px;
     font-style: normal;
@@ -745,7 +745,7 @@
   }
 
   .carousel {
-    margin-left: 490px;
+    margin-left: 780px;
     margin-top: 33px;
     min-height: 394px;
     /* กำหนดความสูงขั้นต่ำเท่ากับความสูงที่ต้องการ */
@@ -856,7 +856,7 @@
     display: flex;
     width: calc(100% - 240px);
     padding-top: 230px;
-    margin-left: 120px;
+    margin-left: 309px;
     margin-right: 120px;
   }
 
@@ -865,6 +865,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    width: 438px;
+    height: 650px;
   }
 
   .position-relative-right {
@@ -874,8 +877,25 @@
     align-items: center;
   }
 
+  /* แต่ละบุคคล - fade ระหว่างบุคคล */
+  .personnel-item {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .personnel-item.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .bg-ex-img {
-    width: 476px;
+    width: 475px;
     height: 500px;
     overflow: hidden;
     text-align: center;
@@ -883,42 +903,25 @@
     z-index: 1;
     display: flex;
     align-items: flex-end;
-    /* เปลี่ยนจาก center เป็น flex-end */
     justify-content: center;
   }
 
   .fade-image {
     position: absolute;
     bottom: 0;
-    /* เปลี่ยนจาก top: 50% เป็น bottom: 0 */
     left: 50%;
     transform: translateX(-50%);
-    /* เปลี่ยนจาก translate(-50%, -50%) เป็น translateX(-50%) */
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-
-  .fade-image.active {
     opacity: 1;
-  }
-
-  .fade-image:first-child {
-    position: absolute;
-    bottom: 0;
-    /* เปลี่ยนจาก top: 50% เป็น bottom: 0 */
-    left: 50%;
-    transform: translateX(-50%);
-    /* เปลี่ยนจาก translate(-50%, -50%) เป็น translateX(-50%) */
   }
 
   .bg-text-name {
     background-image: url('<?php echo base_url("docs/bg-text-ex.png"); ?>');
-    width: 476px;
+    width: 475px;
     height: 151px;
     display: flex;
     justify-content: center;
@@ -933,7 +936,7 @@
 
   .bg-text-phone-number {
     background-image: url('<?php echo base_url("docs/bg-text-phone.png"); ?>');
-    width: 276px;
+    width: 277px;
     height: 54px;
     display: flex;
     justify-content: center;
@@ -945,7 +948,7 @@
   }
 
   .font-link-name {
-    color: #FFF;
+    color: #404040;
     text-align: center;
     font-size: 23px;
     font-style: normal;
@@ -954,7 +957,7 @@
   }
 
   .font-link-rank {
-    color: #FFF;
+    color: #404040;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -977,7 +980,7 @@
     width: 749px;
     height: 384px;
     background-repeat: no-repeat;
-    margin: 55px auto;
+    margin: 55px 757px;
     position: relative;
     z-index: 5;
   }
@@ -1001,6 +1004,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-top: -10px;
   }
 
   .font-banner-button-detail {
@@ -1010,18 +1014,20 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1.3;
+    margin-top: -10px;
+    margin-left: -40px;
   }
 
   .button-six {
     display: grid;
-    grid-template-columns: 95px 1fr;
+    grid-template-columns: 145px 1fr;
     align-items: center;
-    width: 387px;
-    height: 97px;
+    width: 377px;
+    height: 89px;
     background-image: url('<?php echo base_url("docs/banner_button.png"); ?>');
     background-repeat: no-repeat;
     transition: background-image 0.6s ease;
-    color: #ffffff;
+    color: #404040;
     text-decoration: none;
     margin-left: 20px;
   }
@@ -1043,7 +1049,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     /* margin-left: -30px; */
+    /* margin-left: -30px; */
   }
 
   .button-banner-container {
@@ -1288,7 +1294,7 @@
     display: flex;
     width: 200%;
     animation: waterMove 30s linear infinite;
-    margin-top: 698px;
+    margin-top: 652px;
   }
 
   .water-image {
@@ -1474,7 +1480,7 @@
   }
 
   .font-text-run {
-    color: #fff;
+    color: #404040;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -1510,8 +1516,8 @@
   .bg-header-activity {
     background-image: url('<?php echo base_url("docs/head-activity.png"); ?>');
     background-repeat: no-repeat;
-    height: 98px;
-    width: 420px;
+    height: 117px;
+    width: 429px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1889,17 +1895,17 @@
   }
 
   .font-travel {
-    color: #964518;
+    color: #194092;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 1;
+    font-weight: 500;
+    line-height: 33.366px;
   }
 
   .rectangle-travel {
     flex-shrink: 0;
-    background: linear-gradient(90deg, rgba(239, 219, 155, 0.00) 0%, #EFDB9B 54.6%, rgba(239, 219, 155, 0.00) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 10.9%, rgba(255, 255, 255, 0.96) 88.9%, rgba(255, 255, 255, 0.00) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3133,7 +3139,7 @@
     /* 153.627% */
   }
 
-    .font-head-all-web {
+  .font-head-all-web {
     color: #FFC23B;
     text-align: center;
 
@@ -3672,7 +3678,7 @@
 
   .pages-select-pdf {
     border-radius: 100px;
-    border: 0.67px solid var(--02, #4A0D49);
+    border: 0.67px solid var(--02, #DB326B);
     background: #FFFCF4;
     padding: 15px;
     margin-bottom: 15px;
@@ -3685,7 +3691,7 @@
 
   .pages-select-pdf:hover {
     border-radius: 100px;
-    border: 0.67px solid var(--02, #4A0D49);
+    border: 0.67px solid var(--02, #DB326B);
     background: #FFF5DB;
     padding: 15px;
     margin-bottom: 15px;
@@ -4967,7 +4973,7 @@
       transform: translateY(0);
     }
   }
-	
+
   .bg-E-book {
     background-image: url('<?php echo base_url("docs/bg-E-book.png"); ?>');
     width: 1408px;
@@ -5083,7 +5089,7 @@
     background-image: url('<?php echo base_url("docs/bg-banner2.png"); ?>');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 1000px;
+    height: 500px;
     width: 1920px;
     z-index: 1;
   }
@@ -5118,8 +5124,8 @@
     margin: auto;
   }
 
-  .water-activity {
-    background-image: url('<?php echo base_url("docs/water-activity.png"); ?>');
+  .top-bg-activity {
+    background-image: url('<?php echo base_url("docs/top-bg-activity.png"); ?>');
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
@@ -5143,7 +5149,7 @@
   .custom-line {
     width: 443px;
     height: 2px;
-    background-color: #4A0D49;
+    background-color: #DB326B;
     margin-top: 25px;
   }
 
@@ -5162,7 +5168,7 @@
 
   .position-3bg {
     width: 1920px;
-    height: 3000px;
+    height: 2500px;
     overflow: hidden;
     position: relative;
   }
@@ -5690,11 +5696,13 @@
 
   @keyframes bird-animation-L {
     0% {
-      left: -20%;
+      left: -40%;
+      top: 0;
     }
 
     100% {
       left: 120%;
+      top: 760px;
     }
   }
 
@@ -5837,7 +5845,7 @@
   }
 
   .cloud-animation-5 {
-    margin-top: 0px;
+    margin-top: 150px;
   }
 
   .cloud-animation-6 {
@@ -6289,7 +6297,7 @@
   }
 
   .font-nav:hover {
-    color: #FFF33B;
+    color: #79360B;
   }
 
   .font-banner-link {
@@ -6538,7 +6546,7 @@
   }
 
   .carousel-indicators button {
-    background-color: #4A0D49;
+    background-color: #DB326B;
     /* Change to your desired color */
     border-radius: 50%;
     width: 12px;
@@ -6546,7 +6554,7 @@
   }
 
   .carousel-indicators .active {
-    background-color: #4A0D49;
+    background-color: #DB326B;
     /* Change to your desired color for the active indicator */
   }
 
@@ -6602,7 +6610,15 @@
   .font-welcome-btm-other1 {
     color: #FFF;
     text-align: center;
-    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px 0 #191F72,
+      -2px -2px 0 #191F72,
+      2px -2px 0 #191F72,
+      -2px 2px 0 #191F72,
+      0 2px 0 #191F72,
+      2px 0 0 #191F72,
+      0 -2px 0 #191F72,
+      -2px 0 0 #191F72,
+      0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Charmonman;
     font-size: 48px;
     font-style: normal;
@@ -6613,15 +6629,23 @@
   .font-welcome-btm-other2 {
     color: #FFF;
     text-align: center;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    font-size: 26px;
+    text-shadow: 1.5px 1.5px 0 #191F72,
+      -1.5px -1.5px 0 #191F72,
+      1.5px -1.5px 0 #191F72,
+      -1.5px 1.5px 0 #191F72,
+      0 1.5px 0 #191F72,
+      1.5px 0 0 #191F72,
+      0 -1.5px 0 #191F72,
+      -1.5px 0 0 #191F72,
+      0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
   }
 
   .font-pages-head {
-    color: #4A0D49;
+    color: #79360B;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -6761,12 +6785,12 @@
   }
 
   .carousel-indicators button .bi-diamond-fill {
-    color: #FADFFF;
+    color: #FFC0E4;
     /* สีของไอคอนเพชร สามารถเปลี่ยนได้ตามต้องการ */
   }
 
   .carousel-indicators button.active .bi-diamond-fill {
-    color: #4A0D49;
+    color: #DB326B;
     /* สีของไอคอนเพชรเมื่อ active สามารถเปลี่ยนได้ตามต้องการ */
   }
 
@@ -7072,7 +7096,7 @@
   }
 
   .cloud-cartoon-animation-1 {
-    margin-top: 98px;
+    margin-top: 538px;
   }
 
   .cloud-cartoon-animation-2 {
@@ -7091,13 +7115,13 @@
   }
 
   .cloud-cartoon-animation-5 {
-    margin-top: 672px;
-    /* animation-delay: 9s; */
+    margin-top: 0px;
+    animation-delay: 15s;
   }
 
   .cloud-cartoon-animation-6 {
-    margin-top: 268px;
-    animation-delay: 10.5s;
+    margin-top: 0px;
+    /* animation-delay: 10.5s; */
   }
 
   .cloud-cartoon-animation-7 {
@@ -7211,7 +7235,7 @@
   }
 
   .wel-g1-bg2 {
-    background-image: url('<?php echo base_url("docs/lotus-top.png"); ?>');
+    background-image: url('<?php echo base_url("docs/lotus leaf-animation1.png"); ?>');
     position: absolute;
     width: 1920px;
     height: 1000px;
@@ -7387,8 +7411,8 @@
     /* กำหนดจุดเริ่มต้นของการซูมเป็นด้านขวา */
   }
 
-  .wel-g2-bg-Frame-green {
-    background-image: url('<?php echo base_url("docs/Frame-green.png"); ?>');
+  .wel-g2-bg2 {
+    /* background-image: url('<?php echo base_url("docs/Frame-green.png"); ?>'); */
     position: absolute;
     width: 1920px;
     height: 1000px;
@@ -7396,7 +7420,7 @@
     z-index: 2;
     overflow: hidden;
     /* กำหนดจุดเริ่มต้นของการซูมเป็นด้านขวา */
-    animation: fadeInWel 5s ease-out;
+    /* animation: fadeInWel 5s ease-out; */
   }
 
 
@@ -7431,9 +7455,10 @@
     animation-fill-mode: forwards;
     animation-delay: 1s;
     position: absolute;
-    z-index: 2;
-    left: 860px;
-    top: 415px;
+    z-index: 3;
+    top: 254px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .fadeInWel {
@@ -7473,7 +7498,7 @@
   }
 
   .font-wel-g2-visit-content {
-    color: #4A0D49;
+    color: #191F72;
     text-align: center;
     text-shadow: 1px 1px 0 #fff,
       -1px -1px 0 #fff,
@@ -7484,14 +7509,14 @@
       0 -1px 0 #fff,
       -1px 0 0 #fff,
       0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 18px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
   .font-wel-g2-visit-content2 {
-    color: #4A0D49;
+    color: #DB326B;
     text-align: center;
     font-family: "Noto Music", "Noto Sans Thai", Arial, sans-serif;
     font-size: 24px;
@@ -7928,7 +7953,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 16px;
-    border: 1px solid #4A0D49;
+    border: 1px solid #DB326B;
     box-shadow: 1px 2px 4px 0px rgba(172, 219, 133, 0.25);
     margin-top: 10px;
   }
@@ -8151,7 +8176,7 @@
     flex-shrink: 0;
     /* ความหนาของเส้น */
     stroke-width: 2px;
-    stroke: #4A0D49;
+    stroke: #DB326B;
     /* สีของเส้น */
     /* ระยะห่างระหว่างเส้นกับข้อความและการจัดกึ่งกลาง */
   }
@@ -8479,7 +8504,7 @@
 
   .calender-detail-head {
     border-radius: 20px;
-    border: 1px solid #4A0D49;
+    border: 1px solid #DB326B;
     background: #FFF;
     width: 268px;
     height: 43px;
@@ -8513,7 +8538,7 @@
     /* เพิ่ม z-index ให้สูงมาก */
     background-color: white;
     border-radius: 20px;
-    border: 1px solid #4A0D49;
+    border: 1px solid #DB326B;
     width: 800px;
     max-width: 90%;
     overflow: auto;
@@ -8533,7 +8558,7 @@
     background: #FFF;
 
     padding: 15px 20px;
-    border-bottom: 1px solid #4A0D49;
+    border-bottom: 1px solid #DB326B;
     position: relative;
   }
 
@@ -8589,7 +8614,7 @@
 
   .calender-detail-content {
     border-radius: 20px;
-    border: 1px solid #4A0D49;
+    border: 1px solid #DB326B;
     background: #FFF;
     width: 268px;
     height: 184px;
@@ -9712,7 +9737,7 @@
     flex: 1 1 auto;
     padding: 1.25rem;
   }
-	
+
   .bg-e-magazine {
     background-image: url('<?php echo base_url("docs/bg-e-magazine.png"); ?>');
     height: 500px;
@@ -9721,8 +9746,8 @@
     overflow: hidden;
     margin: auto;
   }
-	
-	  .bg-statistics {
+
+  .bg-statistics {
     background-image: url('<?php echo base_url("docs/bg-statistics.png"); ?>');
     height: 300px;
     width: 1920px;
@@ -9813,7 +9838,7 @@
   .btn-statistics5 {
     background-image: url('<?php echo base_url("docs/bg-statistics-all.png"); ?>');
   }
-	
+
   .bg-link-dla {
     background-image: url('<?php echo base_url("docs/bg-link-dla.png"); ?>');
     background-repeat: no-repeat;
@@ -10141,19 +10166,19 @@
   .active-submenu {
     background-color: #F8F9FA;
     /* สีพื้นหลังเมื่อ active */
-    color: #4A0D49 !important;
+    color: #DB326B !important;
     /* สีตัวอักษรเมื่อ active */
     font-weight: bold;
   }
 
   .active-submenu .font-nav {
-    color: #4A0D49 !important;
+    color: #DB326B !important;
     /* สีตัวอักษรของ span เมื่อ active */
   }
 
   /* ถ้าต้องการให้มีเส้นด้านข้างเมื่อ active */
   .active-submenu {
-    border-left: 4px solid #4A0D49;
+    border-left: 4px solid #DB326B;
     padding-left: 10px;
   }
 
@@ -10833,8 +10858,8 @@
   /* ------------------------------------------------ */
 
   .google-map-footer {
-    top: 353px;
-    right: 261px;
+    top: 304px;
+    right: 338px;
     position: absolute;
     z-index: 3;
     border-radius: 20px;
@@ -10854,8 +10879,8 @@
   .google-map-footer iframe {
     border-radius: 15px;
     /* ทำให้ iframe มีมุมโค้งมนด้วย */
-    width: 310px;
-    height: 310px;
+    width: 285px;
+    height: 285px;
     display: block;
     /* ป้องกันช่องว่างด้านล่าง */
     transition: all 0.3s ease;
@@ -10871,8 +10896,8 @@
   }
 
   .animation-text-orbortor-footer {
-    left: 743px;
-    top: 393px;
+    left: 382px;
+    top: 411px;
     animation: fadeTopdDown 4s linear infinite;
     position: absolute;
     z-index: 3;
@@ -10883,8 +10908,8 @@
   }
 
   .animation-text-orbortor-header {
-    left: 536px;
-    top: 218px;
+    left: 468px;
+    top: 159px;
     animation: fadeInWel 10s ease-out, fadeTopdDown 5s linear infinite;
     position: absolute;
     z-index: 4;
@@ -10956,8 +10981,8 @@
   }
 
   .animation-text-orbortor-nav {
-    right: 171px;
-    top: 149px;
+    right: 140px;
+    top: 144px;
     animation: fadeInWel 10s ease-out, fadeTopdDown 5s linear infinite;
     position: absolute;
     z-index: 4;
@@ -10975,8 +11000,8 @@
     animation: fadeInhead 10s forwards;
     animation-delay: 1s;
     opacity: 0;
-    top: 453px;
-    left: 418px;
+    /* top: 453px; */
+    /* left: 418px; */
     position: absolute;
     z-index: 2;
   }
@@ -10991,7 +11016,10 @@
     animation: fadeInhead 10s forwards;
     animation-delay: 2s;
     opacity: 0;
-    color: #4A0D49;
+    position: absolute;
+    z-index: 3;
+
+    color: #191F72;
     text-align: center;
     text-shadow: 1px 1px 0 #fff,
       -1px -1px 0 #fff,
@@ -11002,18 +11030,21 @@
       0 -1px 0 #fff,
       -1px 0 0 #fff,
       0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 25px;
+
+    top: 336px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .fadeInhead4 {
     animation: fadeInhead 10s forwards;
     animation-delay: 3s;
     opacity: 0;
-    color: #4A0D49;
+    color: #DB326B;
     text-align: center;
     text-shadow: 1px 1px 0 #fff,
       -1px -1px 0 #fff,
@@ -11072,8 +11103,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 3;
-    margin-top: 661px;
-    margin-left: 25px;
+    margin-top: 360px;
+    margin-left: -275px;
   }
 
   .animation-wind-2 {
@@ -11081,8 +11112,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 3;
-    margin-top: 455px;
-    margin-left: 1567px;
+    margin-top: 589px;
+    margin-left: 75px;
   }
 
   .animation-wind-3 {
@@ -11090,8 +11121,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 2;
-    margin-top: 573px;
-    margin-left: 1466px;
+    margin-top: 277px;
+    margin-left: 1495px;
   }
 
   .animation-wind-4 {
@@ -11099,8 +11130,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 1;
-    margin-top: 613px;
-    margin-left: 1343px;
+    margin-top: 508px;
+    margin-left: 1373px;
   }
 
   .animation-wind-5 {
@@ -11135,8 +11166,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 1;
-    margin-top: -332px;
-    margin-left: -278px;
+    margin-top: 48px;
+    margin-left: -641px;
   }
 
   .animation-wind-9 {
@@ -11144,8 +11175,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 2;
-    margin-top: -153px;
-    margin-left: -532px;
+    margin-top: 269px;
+    margin-left: 1097px;
   }
 
   .animation-wind-10 {
@@ -11153,8 +11184,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 1;
-    margin-top: -154px;
-    margin-left: -1200px;
+    margin-top: 192px;
+    margin-left: -1281px;
   }
 
   .animation-wind-11 {
@@ -11162,8 +11193,8 @@
     display: inline-block;
     visibility: visible;
     z-index: 1;
-    margin-top: -820px;
-    margin-left: 658px;
+    margin-top: 0px;
+    margin-left: 1463px;
   }
 
   .animation-wind-12 {
@@ -12336,8 +12367,8 @@
   }
 
   /* ***************************************** */
-	
-	/* โครงสร้างบุคลากรใหม่ =================================== */
+
+  /* โครงสร้างบุคลากรใหม่ =================================== */
   .structure-dropdown-container {
     display: flex;
     gap: 50px;
@@ -12358,8 +12389,8 @@
   }
 
   .structure-dropdown-column a {
-    display: flex ;
-    align-items: flex-start ;
+    display: flex;
+    align-items: flex-start;
     /* หรือ align-items: center; ถ้าต้องการให้อยู่กลาง */
   }
 
@@ -12374,18 +12405,19 @@
   }
 
   /* ========================================================== */
-	
-	/* preview img Fancybo start =========================================== */
+
+  /* preview img Fancybo start =========================================== */
   .gallery-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
-}
+  }
 
-.gallery-item:hover {
+  .gallery-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+
   /* preview img Fancybo end =========================================== */
 </style>
